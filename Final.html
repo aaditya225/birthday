@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="ZUiY.gif" alt="stars" class="star">
+    <img src="5l03.gif" alt="ballon" class="ballon">
+    <div class="container">
+        <div class="birthdayCard">
+            <div class="cardFront">
+                <div class="front-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wrap-deco">
+                    <div class="decorations"></div>
+                    <div class="decorationsTwo"></div>
+                </div>
+                <div class="wrap-decoTwo">
+                    <div class="decorations"></div>
+                    <div class="decorationsThree"></div>
+                </div>
+                <div class="plate">
+                    <div class="cake"></div>
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <div class="cardInside">
+                <div class="img">
+                    <img src="birthday.jpg" alt="Bestiepic" class="bdyboy">>
+                    <img src="6ob.gif" alt="confetti" class="confetti">
+                </div>
+                <div class="inside-text">
+                    <h3 class="happy">HAPPY</h3>
+                    <h2 class="bday">BIRTHDAY</h2>
+                    <h3 class="toyou">to you!</h3>
+                </div>
+                <div class="wishes">
+                    <p>Hey Jivi,</p>
+                    <p>Tu sirf meri best friend nahi hai, tu meri family jaisi hai. Humne itni saari yaadein banayi hain jo zindagi bhar mere saath rahengi. 
+                        Tere bina life kaafi adhoori lagti hai, aur tere saath har ek moment special ban jaata hai. 
+                        Tere saath woh lamhe jo haste, rote, ladte, aur phir se ek dusre ko samjhate guzare hain, unhe mai kabhi nahi bhool sakta. 
+                        Tu meri sabse badi support system hai, aur main hamesha tera saath dunga, chahe jo bhi ho. 
+                        Bas itna hi kehna hai — tere jaisa yaar kaha! 💙</p>
+                    <p class="name">~ From Aaditya</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <img src="4SHX.gif" alt="cat" class="cat">
+    <audio autoplay loop>
+        <source src="Ye Tune Kya Kiya - Once Upon A Time In Mumbaai Dobara 320 Kbps.mp3" type="audio/mpeg">
+      </audio>
+      <script>
+        // Typing animation for the message
+        const message = "Tu sirf meri best friend nahi hai, tu meri family jaisi hai. Humne itni saari yaadein banayi hain jo zindagi bhar mere saath rahengi. Tere bina life kaafi adhoori lagti hai, aur tere saath har ek moment special ban jaata hai. Tere saath woh lamhe jo haste, rote, ladte, aur phir se ek dusre ko samjhate guzare hain, unhe mai kabhi nahi bhool sakta. Tu meri sabse badi support system hai, aur main hamesha tera saath dunga, chahe jo bhi ho. Bas itna hi kehna hai — tere jaisa yaar kaha! 💙";
+        const wishesElement = document.querySelector('.wishes p:nth-child(2)');
+        let i = 0;
+        
+        function typeWriter() {
+            if (i < message.length) {
+                wishesElement.textContent += message.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50); // Adjust speed here (lower = faster)
+            }
+        }
+        
+        // Start typing after 1 second
+        setTimeout(() => {
+            wishesElement.textContent = ''; // Clear existing text
+            typeWriter();
+        }, 1000);
+    </script>
+</body>
+
+</html>
